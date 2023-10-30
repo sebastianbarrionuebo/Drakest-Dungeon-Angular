@@ -1,0 +1,31 @@
+
+<div class="card conten">
+    <h2 class="card-title">Logeo</h2>
+    <div class="card-body">
+        <form [formGroup]="formUser" (ngSubmit)="authInfo()" >
+            <div>
+                <label class="form-label" >Nombre de Usuario</label>
+                <input class="form-control" formControlName="userName"  type="text" placeholder="Ingrese su nombre">
+                <div class="alert alert-danger"  [hidden]="userName.valid || userName.pristine"  >
+                    <span>El nombre es obligatorio</span>
+                </div>
+            </div>
+
+            <div>
+                <label class="form-label" >Password</label>
+                <input class="form-control" formControlName="password" type="password" placeholder="Ingrese su Password">
+                <div class="alert alert-danger"  [hidden]="password.valid || password.pristine"  >
+                    <span>El nombre es obligatorio</span>
+                </div>
+            </div>
+
+            <div>
+                <button [disabled]="!userName.valid || !password.valid" class="btn btn-primary m-2" >Enviar</button>
+                <button (click)="irRegistro()" class="btn btn-danger m-2" >Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{{formUser.get('userName')?.value}}

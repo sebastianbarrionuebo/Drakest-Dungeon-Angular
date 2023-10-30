@@ -1,0 +1,9 @@
+
+<div class="conten">
+    <div class="conten-itemStats">
+        <app-hero-stats [heroEstadisitca]="heroEstadisitca" ></app-hero-stats>
+    </div>
+    <div class="conten-itemList">
+        <app-hero-list [listaHeroes]="listaHeroes"  (idHeroStats)="heroSeleccionado($event)"  ></app-hero-list>
+    </div>
+</div>

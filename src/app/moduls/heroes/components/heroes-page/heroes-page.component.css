@@ -1,0 +1,13 @@
+
+.conten{
+    display: flex;
+    flex-direction: row;
+}
+
+.conten-itemStats{
+    flex: 70%;
+}
+
+.conten-itemList{
+    flex: 30%;
+}
