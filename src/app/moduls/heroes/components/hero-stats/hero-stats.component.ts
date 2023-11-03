@@ -15,6 +15,8 @@ export class HeroStatsComponent {
   }
 
 
+  asignarEquipo(id:Number) {
 
+  }
 
 }

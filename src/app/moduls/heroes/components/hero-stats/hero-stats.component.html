@@ -1,19 +1,24 @@
-<div class="conten">
-    <div class="card">
-        <div class="card-title">
-            <h2> {{ heroEstadisitca?.name }} </h2>
+
+    <div class="conten card">
+        <div class="conten-img">
+            <img src="src/app/data/esqueleto.jpg" alt="">
         </div>
-        <div class="card-body">
-            <p><span>hp</span>: {{ heroEstadisitca?.hp }} </p>
-            <p><span>heal</span>: {{ heroEstadisitca?.heal }} </p>
-            <p><span>damageMin</span>: {{ heroEstadisitca?.damageMin }} </p>
-            <p><span>damageMax</span>: {{ heroEstadisitca?.damageMax }} </p>
-            <p><span>armor</span>: {{ heroEstadisitca?.armor }} </p>
-            <p><span>hit</span>: {{ heroEstadisitca?.hit }} </p>
-            <p><span>dodge</span>: {{ heroEstadisitca?.dodge }} </p>
-            <p><span>poisonResist</span>: {{ heroEstadisitca?.poisonResist }} </p>
-            <p><span>stunResist</span>: {{ heroEstadisitca?.stunResist }} </p>
-            <p><span>bleedResist</span>: {{ heroEstadisitca?.bleedResist }} </p>
+        <div class="conten-card">
+            <div class="card-title">
+                <h2> {{ heroEstadisitca?.name }} </h2>
+            </div>
+            <div class="card-body">
+                <p><span>hp</span>: {{ heroEstadisitca?.hp }} </p>
+                <p><span>heal</span>: {{ heroEstadisitca?.heal }} </p>
+                <p><span>damageMin</span>: {{ heroEstadisitca?.damageMin }} </p>
+                <p><span>damageMax</span>: {{ heroEstadisitca?.damageMax }} </p>
+                <p><span>armor</span>: {{ heroEstadisitca?.armor }} </p>
+                <p><span>hit</span>: {{ heroEstadisitca?.hit }} </p>
+                <p><span>dodge</span>: {{ heroEstadisitca?.dodge }} </p>
+                <p><span>poisonResist</span>: {{ heroEstadisitca?.poisonResist }} </p>
+                <p><span>stunResist</span>: {{ heroEstadisitca?.stunResist }} </p>
+                <p><span>bleedResist</span>: {{ heroEstadisitca?.bleedResist }} </p>
+                <button (click)="asignarEquipo(heroEstadisitca?.idHeroe!)" class="btn btn-dark">Agragar/Quitar</button>
+            </div>
         </div>
     </div>
-</div>

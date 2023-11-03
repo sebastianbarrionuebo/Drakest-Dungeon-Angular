@@ -5,9 +5,10 @@
 }
 
 .conten-itemStats{
-    flex: 70%;
+    flex: 80%;
 }
 
 .conten-itemList{
-    flex: 30%;
+    flex: 20%;
+    background-color: rgb(61, 61, 56);
 }

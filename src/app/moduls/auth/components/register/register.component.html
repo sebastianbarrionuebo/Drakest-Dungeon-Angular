@@ -1,39 +1,41 @@
-<div class="card conten">
-    <h2 class="card-title" >Registro</h2>
-    <div class="card-body">
-        <form [formGroup]="formUser" (ngSubmit)="procesarInfo()" >
+<div class="conten">
+    <div class="card">
+        <h2 class="card-title" >Registro</h2>
+        <div class="card-body">
+            <form [formGroup]="formUser" (ngSubmit)="procesarInfo()" >
 
-            <div class="conten-irem">
-                <label class="form-label" >Nombre</label>
-                <input formControlName="userName" type="text"  class="form-control"  placeholder="Ingrese nombre de usuario">
+                <div class="conten-item">
+                    <label class="form-label" >Nombre</label>
+                    <input formControlName="userName" type="text"  class="form-control"  placeholder="Ingrese nombre de usuario">
+                    
+                    <div class="alert alert-danger" [hidden]="userName.valid || userName.pristine">
+                        <span>El nombre es obligatorio</span>
+                    </div>
+                </div>
+
+                <div class="conten-item">
+                    <label class="form-label">email</label>
+                    <input formControlName="email" class="form-control"  type="email" placeholder="Ingrese su email">
+                    <div class="alert alert-danger" [hidden]="email.valid || email.pristine">
+                        <span *ngIf="email.errors?.['required']"  >
+                            El email es obligatorio
+                        </span>
+                        <span *ngIf="email.errors?.['email']"  >
+                            El email debe ser valido
+                        </span>
+                    </div>
+                </div>
                 
-                <div class="alert alert-danger" [hidden]="userName.valid || userName.pristine">
-                    <span>El nombre es obligatorio</span>
+                <div class="conten-item">
+                    <label class="form-label" >Password</label>
+                    <input formControlName="password" class="form-control"  type="password" placeholder="Ingrese password">
                 </div>
-            </div>
-
-            <div class="conten-irem">
-                <label class="form-label">email</label>
-                <input formControlName="email" class="form-control"  type="email" placeholder="Ingrese su email">
-                <div class="alert alert-danger" [hidden]="email.valid || email.pristine">
-                    <span *ngIf="email.errors?.['required']"  >
-                        El email es obligatorio
-                    </span>
-                    <span *ngIf="email.errors?.['email']"  >
-                        El email debe ser valido
-                    </span>
+                <div class="alert alert-danger" [hidden]="password.valid || password.pristine">
+                    <span>La password es obligatoria</span>
                 </div>
-            </div>
-            
-            <div class="conten-irem">
-                <label class="form-label" >Password</label>
-                <input formControlName="password" class="form-control"  type="password" placeholder="Ingrese password">
-            </div>
-            <div class="alert alert-danger" [hidden]="password.valid || password.pristine">
-                <span>La password es obligatoria</span>
-            </div>
-            
-            <button [disabled]="!userName.valid || !email.valid || !password.valid" class="btn btn-primary" >Registrar</button>
-        </form>
+                
+                <button [disabled]="!userName.valid || !email.valid || !password.valid" class="btn btn-primary" >Registrar</button>
+            </form>
+        </div>
     </div>
 </div>

@@ -1,5 +1,18 @@
 
 .conten{
+    display: flex;
+    flex-direction: row;
     text-align: center;
     margin: 3em 0;
+}
+
+.conten-img{
+    flex: 30%;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.conten-card{
+    flex: 70%;
 }
