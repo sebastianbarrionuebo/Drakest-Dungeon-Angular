@@ -1,0 +1,31 @@
+
+.conten{
+    background-image: url('../../../../../assets/Background-user.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: auto;
+    border: solid 0.2em rgb(41, 41, 41);
+}
+
+.card{
+    text-align: center;
+    padding: 10em 10em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+.card-body {
+    font-size: 1.3em;
+}
+
+.item{
+    padding: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.item-padding{
+    padding: 0 2em;
+}

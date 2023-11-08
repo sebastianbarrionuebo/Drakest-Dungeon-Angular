@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Entidad } from 'src/app/core/models';
+import { EntidadService } from 'src/app/core/services/entidad.service';
 
 @Component({
   selector: 'app-hero-list',
@@ -7,13 +8,13 @@ import { Entidad } from 'src/app/core/models';
   styleUrls: ['./hero-list.component.css']
 })
 export class HeroListComponent {
-
-  @Input() listaHeroes: Array<Entidad> = []
   @Output() idHeroStats: EventEmitter<Number> = new EventEmitter();
 
-  constructor() {
+
+  constructor(public entidadService:EntidadService) {
   }
 
+  
   abrirAtributos(id:Number){
     this.idHeroStats.emit(id);
   }

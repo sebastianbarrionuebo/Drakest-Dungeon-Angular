@@ -1,0 +1,45 @@
+
+
+.conten{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+  
+.conten-team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3em 0;
+    flex: 75%;
+}
+.conten-team_item{
+    color: white;
+    padding: 0 2em;
+}
+
+.img-hero{
+    width: 5em;
+    height: 5em;
+}
+
+.conten-hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 0.3em 3em;
+}
+
+
+
+.conten-option{
+    flex: 25%;
+}
+
+.btn-option{
+    padding: 1em 1em;
+    margin: 0 1em;
+}

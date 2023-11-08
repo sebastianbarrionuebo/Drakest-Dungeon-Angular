@@ -1,0 +1,12 @@
+
+.conten{
+    display: flex;
+    flex-direction: row;
+}
+
+.conten-userInfo{
+    flex: 50%;
+}
+.conten-listTeams{
+    flex: 50%;
+}

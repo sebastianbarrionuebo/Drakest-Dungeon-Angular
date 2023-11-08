@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/core/services/auth/auth.service';
 
 @Component({
   selector: 'app-main-menu',
@@ -8,18 +9,24 @@ import { Router } from '@angular/router';
 })
 export class MainMenuComponent {
 
-  constructor(private router:Router) {
+  constructor(private router:Router,private authService:AuthService) {
 
-  }
-
-
-
-  cerrarSecion(){
-    this.router.navigate(["/landing"])
   }
 
   irAHeroes(){
     this.router.navigate(["/main/heroes"])
   }
 
+  irADungeons() {
+    this.router.navigate(["/main/dungeons"])
+  }
+
+  irAUsuario() {
+    this.router.navigate(["/main/usuario"]);
+  }
+
+  cerrarSecion(){
+    this.authService.logout();
+    this.router.navigate(["/landing"]);
+  }
 }

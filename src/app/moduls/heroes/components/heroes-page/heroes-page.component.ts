@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Entidad } from 'src/app/core/models';
 import { EntidadService } from 'src/app/core/services/entidad.service';
 
@@ -7,35 +7,16 @@ import { EntidadService } from 'src/app/core/services/entidad.service';
   templateUrl: './heroes-page.component.html',
   styleUrls: ['./heroes-page.component.css']
 })
-export class HeroesPageComponent implements OnInit {
-
-  public listaHeroes:Array<Entidad> = [];
-  public heroEstadisitca?:Entidad;
+export class HeroesPageComponent {
 
 
-  constructor(private entidadServ:EntidadService) {
-    this.entidadServ.getEntidades().subscribe({
-      next: (result) =>{
-        result.forEach(item => {
-          this.listaHeroes?.push(new Entidad(item))
-        });
-      },
-      error: (error) => {console.log(error)}
-    })
-    this.heroEstadisitca = this.listaHeroes[0];
+  constructor(public entidadServ:EntidadService) {
+    this.entidadServ.getEntidades()
   }
-
-
 
 
   heroSeleccionado(id:Number) {
-    this.heroEstadisitca = this.listaHeroes.find(hero => hero.idHeroe === id);
+    this.entidadServ.heroStats = this.entidadServ.listHeroes.find(hero => hero.idEntidad === id);
   }
 
-
-
-
-  ngOnInit(): void {
-
-  }
 }

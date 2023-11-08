@@ -2,8 +2,19 @@
 
 .conten{
     text-align: center;
+    max-height: 800px; /* Establece la altura máxima que desees */
+    overflow-y: auto; 
 }
 
 .btn{
+    display: flex;
+    flex-direction: row;
     width: 90%;
+    align-content: center;
+    align-items: center;
+}
+
+.img-Hero{
+    width: 5em;
+    height: 5em;
 }

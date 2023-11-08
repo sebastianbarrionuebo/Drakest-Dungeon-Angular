@@ -1,0 +1,19 @@
+
+
+
+.conten{
+    background-color: black;
+    padding: 3em 5em;
+}
+
+.conten-item{
+    padding: 2em 0;
+}
+
+.conten-btn{
+    padding-top: 3em;
+    text-align: end;
+}
+.btn{
+    padding: 0.5em 3em;
+}

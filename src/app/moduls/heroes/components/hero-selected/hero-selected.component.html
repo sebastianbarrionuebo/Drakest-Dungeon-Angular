@@ -1,0 +1,32 @@
+
+<section class="conten">
+    <div class="conten-team">
+        <div class="conten-team_item">
+            <label class="label-form" >Retaguardia</label>
+            <button (click)="quitarHeroe(1)" class="conten-hero btn btn-dark">
+                <img [src]="equipService.retaguardia.urlImgHead" class="img-hero" alt="">
+                <p> {{equipService.retaguardia.name}}</p>
+            </button>
+        </div>
+
+        <div class="conten-team_item">
+            <label class="label-form" >Centro</label>
+            <button (click)="quitarHeroe(2)" class="conten-hero btn btn-dark">
+                <img [src]="equipService.centro.urlImgHead" class="img-hero" alt="">
+                <p> {{equipService.centro.name}}</p>
+            </button>
+        </div>
+        
+        <div class="conten-team_item">
+            <label class="label-form" >Frente</label>
+            <button (click)="quitarHeroe(3)" class="conten-hero btn btn-dark">
+                <img [src]="equipService.frente.urlImgHead" class="img-hero" alt="">
+                <p> {{equipService.frente.name}}</p>
+            </button>
+        </div>
+    </div>
+    <div class="conten-option">
+        <button (click)="guardarEquipo()" [disabled]="!equipService.retChek || !equipService.centChek || !equipService.frentChek" class="btn btn-dark btn-option">Guardar</button>
+        <button (click)="salir()" class="btn btn-danger btn-option">Salir</button>
+    </div>
+</section>

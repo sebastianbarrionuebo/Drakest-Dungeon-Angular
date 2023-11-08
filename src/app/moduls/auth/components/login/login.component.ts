@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup , FormControl, Validators } from '@angular/forms';
-import { AuthService } from 'src/app/core/services/auth.service';
+import { AuthService } from 'src/app/core/services/auth/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -27,14 +27,7 @@ export class LoginComponent {
   }
 
   authInfo() {
-    this.authService.getToAuth(this.formUser.get("userName")?.value,this.formUser.get('password')?.value).subscribe({
-      next: (result) => {
-        if(result.length == 1){
-          this.router.navigate(["/main"])
-        }
-      },
-      error: (error) => {console.log(error)}
-    })
+    this.authService.getToAuth(this.formUser.get("userName")?.value,this.formUser.get('password')?.value);
   }
 
   get userName(){

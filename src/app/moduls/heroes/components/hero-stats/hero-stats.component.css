@@ -3,16 +3,33 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin: 3em 0;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0 3em;
+    background-image: url('../../../../../assets/Background-stats.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-repeat: no-repeat;;
+    background-position: center;
+    border: 0.3em solid rgb(41, 38, 38);
 }
 
 .conten-img{
+    background-color: rgb(22, 22, 22);
     flex: 30%;
-    width: 200px;
-    height: auto;
+    width: 10em;
+    height: 30em;
     margin: 10px;
+    border: 3px solid #333;
 }
 
-.conten-card{
+.conten-stats{
     flex: 70%;
 }
+
+.img-Hero {
+    width: 100%;
+    height: 100%;
+}
+  

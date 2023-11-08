@@ -1,0 +1,11 @@
+
+
+<div class="card">
+    <h3 class="card-title mt-3"> {{dungeon?.name}} </h3>
+    <div class="card-body">
+        <p> {{dungeon?.description}} </p>
+            <button *ngFor="let item of dungeon?.lvls" (click)="irAEquipo(item!)" class="btn btn-dark m-2" > 
+                {{item.lvl}} 
+            </button>
+    </div>
+</div>

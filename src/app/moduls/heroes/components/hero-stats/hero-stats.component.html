@@ -1,24 +1,24 @@
 
-    <div class="conten card">
+    <section class="conten card">
         <div class="conten-img">
-            <img src="src/app/data/esqueleto.jpg" alt="">
+            <img [src]="entidad?.urlImg" alt="" class="img-Hero">
         </div>
-        <div class="conten-card">
+        <div class="conten-stats">
             <div class="card-title">
-                <h2> {{ heroEstadisitca?.name }} </h2>
+                <h2> {{ entidad?.name }} </h2>
             </div>
             <div class="card-body">
-                <p><span>hp</span>: {{ heroEstadisitca?.hp }} </p>
-                <p><span>heal</span>: {{ heroEstadisitca?.heal }} </p>
-                <p><span>damageMin</span>: {{ heroEstadisitca?.damageMin }} </p>
-                <p><span>damageMax</span>: {{ heroEstadisitca?.damageMax }} </p>
-                <p><span>armor</span>: {{ heroEstadisitca?.armor }} </p>
-                <p><span>hit</span>: {{ heroEstadisitca?.hit }} </p>
-                <p><span>dodge</span>: {{ heroEstadisitca?.dodge }} </p>
-                <p><span>poisonResist</span>: {{ heroEstadisitca?.poisonResist }} </p>
-                <p><span>stunResist</span>: {{ heroEstadisitca?.stunResist }} </p>
-                <p><span>bleedResist</span>: {{ heroEstadisitca?.bleedResist }} </p>
-                <button (click)="asignarEquipo(heroEstadisitca?.idHeroe!)" class="btn btn-dark">Agragar/Quitar</button>
+                <p><span>hp</span>: {{ entidad?.hp }} </p>
+                <p><span>heal</span>: {{ entidad?.heal }} </p>
+                <p><span>damageMin</span>: {{ entidad?.damageMin }} </p>
+                <p><span>damageMax</span>: {{ entidad?.damageMax }} </p>
+                <p><span>armor</span>: {{ entidad?.armor }} </p>
+                <p><span>hit</span>: {{ entidad?.hit }}% </p>
+                <p><span>dodge</span>: {{ entidad?.dodge }}% </p>
+                <p><span>poisonResist</span>: {{ entidad?.poisonResist }}% </p>
+                <p><span>stunResist</span>: {{ entidad?.stunResist }}% </p>
+                <p><span>bleedResist</span>: {{ entidad?.bleedResist }}% </p>
+                <button [hidden]="!entidad?.type" (click)="asignarEquipo(entidad!)" class="btn btn-dark">Agragar Heroe</button>
             </div>
         </div>
-    </div>
+    </section>

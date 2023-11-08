@@ -7,17 +7,11 @@
                 <div>
                     <label class="form-label" >Nombre de Usuario</label>
                     <input class="form-control" formControlName="userName"  type="text" placeholder="Ingrese su nombre">
-                    <div class="alert alert-danger"  [hidden]="userName.valid || userName.pristine"  >
-                        <span>El nombre es obligatorio</span>
-                    </div>
                 </div>
     
                 <div>
                     <label class="form-label" >Password</label>
                     <input class="form-control" formControlName="password" type="password" placeholder="Ingrese su Password">
-                    <div class="alert alert-danger"  [hidden]="password.valid || password.pristine"  >
-                        <span>El nombre es obligatorio</span>
-                    </div>
                 </div>
     
                 <div class="pt-4">
