@@ -4,3 +4,9 @@
     background-color: rgba(0, 0, 0, 0.61);
     color: rgb(156, 156, 156);
 }
+.card-title{
+    font-size: 2em;
+}
+.card-body{
+    font-size: 1.2em;
+}

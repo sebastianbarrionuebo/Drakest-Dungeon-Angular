@@ -1,8 +1,8 @@
 
 
-<aside class="conten" >
+<section class="conten" >
     <button (click)="abrirAtributos( item.idEntidad! )" *ngFor="let item of entidadService.listHeroes" class="btn btn-dark m-2" >
         <img [src]="item.urlImgHead" class="img-Hero"> 
         <p>{{item.name}}</p> 
     </button>
-</aside>
+</section>

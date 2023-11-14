@@ -1,12 +1,11 @@
 
-.conten{
-    display: flex;
-    flex-direction: row;
-}
 
-.conten-userInfo{
-    flex: 50%;
-}
-.conten-listTeams{
-    flex: 50%;
+
+.conten{
+    background-image: url('../../../../../assets/Background-user3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: auto;
 }

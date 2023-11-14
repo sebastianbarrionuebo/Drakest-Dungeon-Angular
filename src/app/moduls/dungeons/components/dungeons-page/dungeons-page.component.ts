@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { DungeonService } from 'src/app/core/services/dungeon.service';
-import { EntidadService } from 'src/app/core/services/entidad.service';
 
 @Component({
   selector: 'app-dungeons-page',
@@ -10,13 +10,13 @@ import { EntidadService } from 'src/app/core/services/entidad.service';
 export class DungeonsPageComponent {
 
 
-  constructor(public dungeonService:DungeonService) {
+  constructor(public dungeonService:DungeonService, private router:Router) {
     this.dungeonService.getDungeons();
   }
 
 
-
-
-
+  volverAMain() {
+    this.router.navigate(['/main'])
+  }
 
 }

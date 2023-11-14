@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup , FormControl, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/services/auth/auth.service';
+import { DialogRegisterComponent } from '../dialog-register/dialog-register.component';
 
 
 @Component({
@@ -13,7 +15,7 @@ export class RegisterComponent {
 
   formUser: FormGroup;
 
-  constructor(private fb:FormBuilder, private authService:AuthService, private router:Router) {
+  constructor(private fb:FormBuilder, private authService:AuthService, private router:Router,private matDialog:MatDialog) {
     this.formUser = this.fb.group(
       {
         'userName': ['', Validators.required ],
@@ -26,7 +28,13 @@ export class RegisterComponent {
   procesarInfo(){
     this.authService.setUser(this.formUser.get('userName')?.value,this.formUser.get('email')?.value,this.formUser.get('password')?.value).subscribe({
       next: (result) => {
-        this.router.navigate(["/landing"])
+        const dialogRef = this.matDialog.open(DialogRegisterComponent,{})
+        dialogRef.afterClosed().subscribe({
+          next: (result: any) => {
+            console.log('El cuadro de diálogo se ha cerro:', result);
+            this.router.navigate(["/landing"])
+          }
+        })
       }
     })
     console.log(this.formUser.value)

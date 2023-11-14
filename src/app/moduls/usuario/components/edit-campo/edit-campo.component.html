@@ -1,0 +1,44 @@
+
+
+<div class="card dialog">
+    <h2 class="card-title mt-4">Edita el siguiente campo</h2>
+    <form [formGroup]="editForm" (ngSubmit)="editUser()" class="card-body">
+        <div class="mt-3">
+            <label class="form-label" >Nombre</label>
+            <input formControlName="userName" type="text"  class="form-control"  placeholder="Ingrese nuevo nombre de usuario">
+            
+            <div class="alert alert-danger" [hidden]="userName.valid || userName.pristine">
+                <span>El nombre es obligatorio</span>
+            </div>
+        </div>
+        
+        <div class="mt-3">
+            <label class="form-label">email</label>
+            <input formControlName="email" class="form-control"  type="email" placeholder="Ingrese nuevo email">
+            
+            <div class="alert alert-danger" [hidden]="email.valid || email.pristine">
+                <span *ngIf="email.errors?.['required']"  >
+                    El email es obligatorio
+                </span>
+                <span *ngIf="email.errors?.['email']"  >
+                    El email debe ser valido
+                </span>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label" >Password</label>
+            <input formControlName="password" class="form-control"  type="password" placeholder="Ingrese nueva password">
+
+            <div class="alert alert-danger" [hidden]="password.valid || password.pristine">
+                <span>La password es obligatoria</span>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button class="btn btn-primary m-2" [disabled]="!userName.valid || !email.valid || !password.valid">Guardar</button>
+            <button (click)="closeDialog()" class="btn btn-danger m-2"  >Cancel</button>
+        </div>
+    </form>
+</div>
+

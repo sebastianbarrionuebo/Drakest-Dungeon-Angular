@@ -1,25 +1,27 @@
 
-<div class="contene">
+<app-header></app-header>
+<main class="contene">
     <div class="card">
         <h2 class="card-title">Logeo</h2>
         <div class="card-body">
             <form [formGroup]="formUser" (ngSubmit)="authInfo()" >
-                <div>
+                <div class="conten-item">
                     <label class="form-label" >Nombre de Usuario</label>
                     <input class="form-control" formControlName="userName"  type="text" placeholder="Ingrese su nombre">
                 </div>
-    
-                <div>
+                
+                <div class="conten-item">
                     <label class="form-label" >Password</label>
                     <input class="form-control" formControlName="password" type="password" placeholder="Ingrese su Password">
                 </div>
-    
-                <div class="pt-4">
+                
+                <div class="conten-item">
                     <button [disabled]="!userName.valid || !password.valid" class="btn btn-primary m-2" >Enviar</button>
                     <button (click)="irRegistro()" class="btn btn-danger m-2" >Registrar</button>
                 </div>
             </form>
         </div>
     </div>
-</div>
+</main>
+<app-footer></app-footer>
 

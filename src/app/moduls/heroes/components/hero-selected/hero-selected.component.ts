@@ -7,7 +7,7 @@ import { EquipoService } from 'src/app/core/services/equipo.service';
   templateUrl: './hero-selected.component.html',
   styleUrls: ['./hero-selected.component.css']
 })
-export class HeroSelectedComponent {
+export class HeroSelectedComponent{
 
 
   constructor(public equipService:EquipoService, private router:Router) {
@@ -16,7 +16,6 @@ export class HeroSelectedComponent {
   public guardarEquipo() {
     this.equipService.addEquipo().subscribe({
       next: (result) => {
-        console.log(result)
         this.equipService.resetEquipo();
       },
       error: (error) => {console.log(error)}

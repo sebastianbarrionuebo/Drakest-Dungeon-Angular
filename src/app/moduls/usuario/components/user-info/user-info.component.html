@@ -1,22 +1,23 @@
 
 <section class="conten">
     <div class="card">
-        <h2 class="card-title">Su informacion de usuario</h2>
-        <div class="card-body">
-            <div class="item" >
-                <p class="item-padding" >UserName:  {{authService.user.userName!}}</p>
-                <button class="btn btn-dark">Modificar</button>
+        <h2 class="card-title ">Su informacion de usuario</h2>
+        <div class="card-body container ">
+            <div class="item row">
+                <p class="col" >UserName:  {{authService.user.userName!}}</p>
             </div>
             <hr>
-            <div class="item" >
-                <p class="item-padding" >Email:  {{authService.user.email!}}</p>
-                <button class="btn btn-dark">Modificar</button>
+            <div class="item row">
+                <p class="col" >Email:  {{authService.user.email!}}</p>
             </div>
             <hr>
-            <div class="item" >
-                <p class="item-padding" >Password:  *********</p>
-                <button class="btn btn-dark">Modificar</button>
+            <div class="item row">
+                <p class="col" >Password:  *********</p>
             </div>
+        </div>
+        <div class="pt-5 container text-end">
+            <button (click)="openEdit('name')" class="btn btn-dark m-3" >Editar</button>
+            <button (click)="volverMenu()" class="btn btn-dark m-3" >Salir</button>
         </div>
     </div>
 </section>

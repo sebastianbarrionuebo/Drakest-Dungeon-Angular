@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Entidad } from 'src/app/core/models';
 import { EntidadService } from 'src/app/core/services/entidad.service';
 
 @Component({

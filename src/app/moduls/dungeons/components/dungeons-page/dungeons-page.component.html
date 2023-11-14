@@ -1,5 +1,7 @@
 
-<div class="conten">
+
+<app-header></app-header>
+<main class="conten">
     <div class="conten-item img1">
         <app-info-dugenon [dungeon]="dungeonService.listDungeons[0]" ></app-info-dugenon>
     </div>
@@ -12,5 +14,8 @@
     <div class="conten-item img4">
         <app-info-dugenon [dungeon]="dungeonService.listDungeons[3]" ></app-info-dugenon>
     </div>
-
-</div>
+    <div class=" text-end pt-5">
+        <button (click)="volverAMain()" class="btn btn-dark" >Volver</button>
+    </div>
+</main>
+<app-footer></app-footer>

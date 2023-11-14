@@ -1,0 +1,36 @@
+
+
+
+footer{
+    background-color: rgb(241, 237, 237);
+    color: rgb(119, 119, 119);
+    background: linear-gradient(rgb(19, 19, 20), rgb(0, 0, 0));
+    padding: 3em 0;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navegacion-sitio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.redes-sociales_posicion{
+    padding: 1em 0em;
+    display: flex;
+    flex-direction: row;
+}
+  
+.redes-sociales li {
+    padding: 0 1.2em ;
+    font-size: 24px;
+    color: #333; 
+}

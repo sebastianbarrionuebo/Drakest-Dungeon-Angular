@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/services/auth/auth.service';
+import { EditCampoComponent } from '../edit-campo/edit-campo.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-user-info',
@@ -8,8 +11,22 @@ import { AuthService } from 'src/app/core/services/auth/auth.service';
 })
 export class UserInfoComponent{
 
-  constructor(public authService:AuthService) {
+  constructor(public authService:AuthService, private router:Router, private matDialog:MatDialog) {
   }
 
+  openEdit(campo:String) {
+    const dialogRef = this.matDialog.open(EditCampoComponent,{
+      data: campo
+    })
 
+    dialogRef.afterClosed().subscribe({
+      next: (result) => {
+        console.log('El cuadro de diálogo se ha cerro:', result);
+      }
+    })
+  }
+
+  volverMenu(){
+    this.router.navigate(['/main']);
+  }
 }

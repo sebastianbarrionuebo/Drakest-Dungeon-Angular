@@ -9,11 +9,9 @@ import { EquipoService } from 'src/app/core/services/equipo.service';
 })
 export class UserPageComponent implements OnInit{
 
-  constructor(private equipoService:EquipoService, private entidadService:EntidadService) {
+  constructor(private entidadService:EntidadService) {
 
   }
-
-
 
 
   ngOnInit(): void {

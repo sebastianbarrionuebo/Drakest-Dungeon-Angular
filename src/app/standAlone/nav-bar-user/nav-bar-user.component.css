@@ -1,0 +1,27 @@
+
+
+
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li{
+    display: table-cell;
+    position: relative;
+    padding:  15px 0;
+}
+a{
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    font-size: 1.3em;
+}
+a:hover:after{
+    width: 100%;
+    left: 0;
+    background-color: #00fffc;
+}

@@ -5,7 +5,7 @@
         </div>
         <div class="conten-stats">
             <div class="card-title">
-                <h2> {{ entidad?.name }} </h2>
+                <h2 class="size-title"> {{ entidad?.name }} </h2>
             </div>
             <div class="card-body">
                 <p><span>hp</span>: {{ entidad?.hp }} </p>
@@ -18,7 +18,7 @@
                 <p><span>poisonResist</span>: {{ entidad?.poisonResist }}% </p>
                 <p><span>stunResist</span>: {{ entidad?.stunResist }}% </p>
                 <p><span>bleedResist</span>: {{ entidad?.bleedResist }}% </p>
-                <button [hidden]="!entidad?.type" (click)="asignarEquipo(entidad!)" class="btn btn-dark">Agragar Heroe</button>
+                <button [hidden]="!entidad?.type" (click)="asignarEquipo(entidad!)" class="btn btn-dark mt-4 mb-2">Agregar Heroe</button>
             </div>
         </div>
     </section>

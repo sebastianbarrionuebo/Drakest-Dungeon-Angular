@@ -1,14 +1,18 @@
 
-<div class="conten">
+
+
+<app-header></app-header>
+<main class="conten">
     <div class="conten-itemView">
-        <div class="conten-itemStats">
-            <app-hero-stats [entidad]="entidadServ.heroStats" ></app-hero-stats>
-        </div>
-        <div class="conten-itemTeam">
+        <section class="conten-itemStats">
+            <app-hero-stats [entidad]="entidadService.heroStats" ></app-hero-stats>
+        </section>
+        <section class="conten-itemTeam">
             <app-hero-selected></app-hero-selected>
-        </div>
+        </section>
     </div>
-    <aside class="conten-itemList">
+    <section class="conten-itemList">
         <app-hero-list  (idHeroStats)="heroSeleccionado($event)"  ></app-hero-list>
-    </aside>
-</div>
+    </section>
+</main>
+<app-footer></app-footer>

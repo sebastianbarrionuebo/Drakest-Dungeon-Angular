@@ -50,4 +50,15 @@ export class EntidadService {
     return hero.name;
   }
 
+  public getHeroe(id:Number):Entidad{
+    let heroe:Entidad = new Entidad();
+    this.listHeroes.forEach(item => {
+        if(item.idEntidad === id) {
+          heroe = item
+        }
+      }
+    )
+    return heroe;
+  }
+
 }

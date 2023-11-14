@@ -1,0 +1,20 @@
+
+
+
+
+.edit-dialog {
+    text-align: center;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.3em solid rgb(31, 0, 0);
+    background-color: rgb(66, 1, 1);
+    color: white;
+}
+
+.card-body{
+    padding: 0.5em 4em;
+}

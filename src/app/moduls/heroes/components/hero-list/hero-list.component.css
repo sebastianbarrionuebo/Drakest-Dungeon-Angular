@@ -2,7 +2,7 @@
 
 .conten{
     text-align: center;
-    max-height: 800px; /* Establece la altura máxima que desees */
+    max-height: 800px;
     overflow-y: auto; 
 }
 

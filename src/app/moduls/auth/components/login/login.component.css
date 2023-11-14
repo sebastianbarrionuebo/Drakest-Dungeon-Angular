@@ -3,18 +3,26 @@
     padding: 10em 30%;
     text-align: center;
     background-image: url('../../../../../assets/backgraund-auth.jpg');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* 100% de la altura de la ventana */
+    height: 100vh;
     width: 100vw; 
 }
 
+.conten-item{
+    padding: 1em 0;
+}
+
 .card{
-    padding: 3em 0;
+    padding: 3em 4em;
     background-color: rgba(0, 0, 0, 0.719);
     color: white;
     font-size: 1.3em;
+}
+
+.card-title{
+    font-size: 1.5em;
 }
 
 .card-body{

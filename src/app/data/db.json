@@ -4,25 +4,25 @@
       "id": 4,
       "userName": "admin",
       "email": "admin@gmail.com",
-      "password": "admin123"
+      "password": "admin"
     },
     {
       "id": 2,
       "userName": "pepito",
       "email": "pepito@gmail.com",
-      "password": "pepito123"
+      "password": "pepito"
     },
     {
-      "userName": "userTestLunes",
+      "userName": "userTest",
       "email": "userTest@gmail.com",
-      "password": "userTest12345",
+      "password": "userTest",
       "id": 3
     },
     {
       "id": 1,
-      "userName": "Sebastian",
+      "userName": "Seba",
       "email": "seb.barrionuebo@gmail.com",
-      "password": "Simurdiera200"
+      "password": "1234"
     },
     {
       "userName": "Masi",
@@ -31,10 +31,22 @@
       "id": 5
     },
     {
-      "userName": "Damian",
-      "email": "asdasda@gmail.com",
-      "password": "123456",
-      "id": 6
+      "id": 6,
+      "userName": "",
+      "email": "dsadsa",
+      "password": ""
+    },
+    {
+      "id": 7,
+      "userName": "Carla",
+      "email": "carlaBilla@gmail.com",
+      "password": "1234"
+    },
+    {
+      "userName": "Miguel",
+      "email": "asdasdas@gmail.com",
+      "password": "1234",
+      "id": 8
     }
   ],
   "heroes": [
@@ -615,7 +627,7 @@
     },
     {
       "name": "Rompe escudos",
-      "urlImgHead": "/assets/heroes-head/Crusader-Head.png",
+      "urlImgHead": "/assets/heroes-head/RompeEscudos-Head.png",
       "urlImg": "/assets/heroes/rompeEscudos.png",
       "idEntidad": 5,
       "type": true,
@@ -960,7 +972,7 @@
     },
     {
       "name": "Flagelante",
-      "urlImgHead": "/assets/heroes-head/Crusader-Head.png",
+      "urlImgHead": "/assets/heroes-head/Flagelante-Head.png",
       "urlImg": "/assets/heroes/flagelante.png",
       "idEntidad": 8,
       "type": true,
@@ -1305,7 +1317,7 @@
     },
     {
       "name": "Maestro de canes",
-      "urlImgHead": "/assets/heroes-head/Crusader-Head.png",
+      "urlImgHead": "/assets/heroes-head/MaestroCanes-Head.png",
       "urlImg": "/assets/heroes/maestroCanes.png",
       "idEntidad": 11,
       "type": true,
@@ -2876,10 +2888,10 @@
       "name": "Don",
       "idEntidad": 28,
       "type": false,
-      "urlImg": "/assets/monstruos/patio/don.png",
+      "urlImg": "/assets/monstruos/patio/Don.png",
       "hp": 13,
       "heal": 0,
-      "damageMin": 2,
+      "DamageMin": 2,
       "damageMax": 4,
       "armor": 1,
       "hit": 90,
@@ -3262,35 +3274,27 @@
       "lvls": [
         {
           "lvl": "Nivel 1",
-          "monstruos": {
-            "idEntidad1": 0,
-            "idEntidad2": 2,
-            "idEntidad3": 1
-          }
+          "idEntidad1": 0,
+          "idEntidad2": 2,
+          "idEntidad3": 1
         },
         {
           "lvl": "Nivel 2",
-          "monstruos": {
-            "idEntidad1": 3,
-            "idEntidad2": 4,
-            "idEntidad3": 1
-          }
+          "idEntidad1": 3,
+          "idEntidad2": 4,
+          "idEntidad3": 1
         },
         {
           "lvl": "Nivel 3",
-          "monstruos": {
-            "idEntidad1": 0,
-            "idEntidad2": 0,
-            "idEntidad3": 7
-          }
+          "idEntidad1": 0,
+          "idEntidad2": 0,
+          "idEntidad3": 7
         },
         {
           "lvl": "Nivel 4",
-          "monstruos": {
-            "idEntidad1": 5,
-            "idEntidad2": 6,
-            "idEntidad3": 8
-          }
+          "idEntidad1": 5,
+          "idEntidad2": 6,
+          "idEntidad3": 8
         }
       ]
     },
@@ -3300,27 +3304,21 @@
       "lvls": [
         {
           "lvl": "Nivel 1",
-          "monstruos": {
-            "idEntidad1": 9,
-            "idEntidad2": 10,
-            "idEntidad3": 11
-          }
+          "idEntidad1": 9,
+          "idEntidad2": 10,
+          "idEntidad3": 11
         },
         {
           "lvl": "Nivel 2",
-          "monstruos": {
-            "idEntidad1": 12,
-            "idEntidad2": 13,
-            "idEntidad3": 14
-          }
+          "idEntidad1": 12,
+          "idEntidad2": 13,
+          "idEntidad3": 14
         },
         {
           "lvl": "Nivel 3",
-          "monstruos": {
-            "idEntidad1": 14,
-            "idEntidad2": 16,
-            "idEntidad3": 15
-          }
+          "idEntidad1": 14,
+          "idEntidad2": 16,
+          "idEntidad3": 15
         }
       ]
     },
@@ -3330,35 +3328,27 @@
       "lvls": [
         {
           "lvl": "Nivel 1",
-          "monstruos": {
-            "idEntidad1": 17,
-            "idEntidad2": 18,
-            "idEntidad3": 19
-          }
+          "idEntidad1": 17,
+          "idEntidad2": 18,
+          "idEntidad3": 19
         },
         {
           "lvl": "Nivel 2",
-          "monstruos": {
-            "idEntidad1": 20,
-            "idEntidad2": 21,
-            "idEntidad3": 22
-          }
+          "idEntidad1": 20,
+          "idEntidad2": 21,
+          "idEntidad3": 22
         },
         {
           "lvl": "Nivel 3",
-          "monstruos": {
-            "idEntidad1": 21,
-            "idEntidad2": 23,
-            "idEntidad3": 24
-          }
+          "idEntidad1": 21,
+          "idEntidad2": 23,
+          "idEntidad3": 24
         },
         {
           "lvl": "Nivel 4",
-          "monstruos": {
-            "idEntidad1": 22,
-            "idEntidad2": 26,
-            "idEntidad3": 25
-          }
+          "idEntidad1": 22,
+          "idEntidad2": 26,
+          "idEntidad3": 25
         }
       ]
     },
@@ -3368,65 +3358,39 @@
       "lvls": [
         {
           "lvl": "Nivel 1",
-          "monstruos": {
-            "idEntidad1": 27,
-            "idEntidad2": 28,
-            "idEntidad3": 29
-          }
+          "idEntidad1": 27,
+          "idEntidad2": 28,
+          "idEntidad3": 29
         },
         {
           "lvl": "Nivel 2",
-          "monstruos": {
-            "idEntidad1": 30,
-            "idEntidad2": 31,
-            "idEntidad3": 32
-          }
+          "idEntidad1": 30,
+          "idEntidad2": 31,
+          "idEntidad3": 32
         },
         {
           "lvl": "Nivel 3",
-          "monstruos": {
-            "idEntidad1": 33,
-            "idEntidad2": 33,
-            "idEntidad3": 34
-          }
+          "idEntidad1": 33,
+          "idEntidad2": 33,
+          "idEntidad3": 34
         },
         {
           "lvl": "Nivel 4",
-          "monstruos": {
-            "idEntidad1": 33,
-            "idEntidad2": 33,
-            "idEntidad3": 35
-          }
+          "idEntidad1": 33,
+          "idEntidad2": 33,
+          "idEntidad3": 35
         }
       ]
     }
   ],
-  "equipos": [
-    {
-      "id": 1,
-      "idUser": 1,
-      "equipo": {
-        "idEntidad1": 1,
-        "idEntidad2": 2,
-        "idEntidad3": 3
-      }
-    },
-    {
-      "id": 2,
-      "idUser": 1,
-      "equipo": {
-        "idEntidad1": 4,
-        "idEntidad2": 5,
-        "idEntidad3": 6
-      }
-    },
+  "equiposHeroes": [
     {
       "id": 4,
       "idUser": 1,
       "equipo": {
         "idEntidad1": 12,
         "idEntidad2": 8,
-        "idEntidad3": 4
+        "idEntidad3": 0
       }
     },
     {
@@ -3464,9 +3428,141 @@
         "idEntidad2": 7,
         "idEntidad3": 8
       }
+    },
+    {
+      "id": 11,
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 2,
+        "idEntidad3": 4
+      }
+    },
+    {
+      "id": 12,
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 9,
+        "idEntidad2": 7,
+        "idEntidad3": 6
+      }
+    },
+    {
+      "id": 13,
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 12,
+        "idEntidad2": 5,
+        "idEntidad3": 8
+      }
+    },
+    {
+      "id": 14,
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 6,
+        "idEntidad3": 0
+      }
+    },
+    {
+      "id": 15,
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 6,
+        "idEntidad2": 6,
+        "idEntidad3": 0
+      }
+    },
+    {
+      "id": 16,
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 2,
+        "idEntidad3": 0
+      }
+    },
+    {
+      "idUser": 7,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 5,
+        "idEntidad3": 0
+      },
+      "id": 17
+    },
+    {
+      "idUser": 7,
+      "equipo": {
+        "idEntidad1": 4,
+        "idEntidad2": 4,
+        "idEntidad3": 4
+      },
+      "id": 18
+    },
+    {
+      "idUser": 7,
+      "equipo": {
+        "idEntidad1": 0,
+        "idEntidad2": 0,
+        "idEntidad3": 0
+      },
+      "id": 19
+    },
+    {
+      "idUser": 7,
+      "equipo": {
+        "idEntidad1": 12,
+        "idEntidad2": 11,
+        "idEntidad3": 8
+      },
+      "id": 20
+    },
+    {
+      "idUser": 6,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 5,
+        "idEntidad3": 0
+      },
+      "id": 21
+    },
+    {
+      "idUser": 6,
+      "equipo": {
+        "idEntidad1": 7,
+        "idEntidad2": 7,
+        "idEntidad3": 7
+      },
+      "id": 22
+    },
+    {
+      "idUser": 6,
+      "equipo": {
+        "idEntidad1": 9,
+        "idEntidad2": 7,
+        "idEntidad3": 10
+      },
+      "id": 23
+    },
+    {
+      "id": 24,
+      "idUser": 6,
+      "equipo": {
+        "idEntidad1": 5,
+        "idEntidad2": 5,
+        "idEntidad3": 0
+      }
+    },
+    {
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 4,
+        "idEntidad3": 8
+      },
+      "id": 25
     }
-  ],
-  "abalorios": [
-    {}
   ]
 }

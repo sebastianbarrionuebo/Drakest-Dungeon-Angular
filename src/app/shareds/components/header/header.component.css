@@ -1,0 +1,27 @@
+
+header{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgb(0, 0, 0), rgb(19, 19, 20));
+}
+
+.link{
+    text-decoration: none;
+    color: red;
+}
+.size-title{
+    font-size: 0.9em;
+}
+
+
+.titulo{
+    flex: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+}
+.navBar{
+    flex: 70%;
+}
+

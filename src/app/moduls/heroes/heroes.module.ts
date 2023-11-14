@@ -6,6 +6,8 @@ import { HeroesPageComponent } from './components/heroes-page/heroes-page.compon
 import { HeroListComponent } from './components/hero-list/hero-list.component';
 import { HeroStatsComponent } from './components/hero-stats/hero-stats.component';
 import { HeroSelectedComponent } from './components/hero-selected/hero-selected.component';
+import { SharedsModule } from 'src/app/shareds/shareds.module';
+import { HeroAssignComponent } from './components/hero-assign/hero-assign.component';
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { HeroSelectedComponent } from './components/hero-selected/hero-selected.
     HeroesPageComponent,
     HeroListComponent,
     HeroStatsComponent,
-    HeroSelectedComponent
+    HeroSelectedComponent,
+    HeroAssignComponent
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
+    SharedsModule
   ],
   exports: [
     HeroStatsComponent

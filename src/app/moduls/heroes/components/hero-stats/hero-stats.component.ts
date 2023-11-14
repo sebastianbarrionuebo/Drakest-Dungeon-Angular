@@ -1,8 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Entidad } from 'src/app/core/models';
-import { EquipoService } from 'src/app/core/services/equipo.service';
-import { EditEquipoComponent } from 'src/app/moduls/equipo/components/edit-equipo/edit-equipo.component';
+import { HeroAssignComponent } from '../hero-assign/hero-assign.component';
 
 @Component({
   selector: 'app-hero-stats',
@@ -17,7 +16,7 @@ export class HeroStatsComponent {
 
 
   asignarEquipo(hero:Entidad) {
-    const dialogRef = this.matDialog.open(EditEquipoComponent,{
+    const dialogRef = this.matDialog.open(HeroAssignComponent,{
       data: hero
     })
     dialogRef.afterClosed().subscribe({

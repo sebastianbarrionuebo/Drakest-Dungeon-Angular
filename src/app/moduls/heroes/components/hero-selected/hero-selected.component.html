@@ -4,24 +4,24 @@
         <div class="conten-team_item">
             <label class="label-form" >Retaguardia</label>
             <button (click)="quitarHeroe(1)" class="conten-hero btn btn-dark">
-                <img [src]="equipService.retaguardia.urlImgHead" class="img-hero" alt="">
-                <p> {{equipService.retaguardia.name}}</p>
+                <img [src]="equipService.equipo.Entidad1?.urlImgHead" class="img-hero" alt="">
+                <p> {{equipService.equipo.Entidad1?.name}}</p>
             </button>
         </div>
 
         <div class="conten-team_item">
             <label class="label-form" >Centro</label>
             <button (click)="quitarHeroe(2)" class="conten-hero btn btn-dark">
-                <img [src]="equipService.centro.urlImgHead" class="img-hero" alt="">
-                <p> {{equipService.centro.name}}</p>
+                <img [src]="equipService.equipo.Entidad2?.urlImgHead" class="img-hero" alt="">
+                <p> {{equipService.equipo.Entidad2?.name}}</p>
             </button>
         </div>
         
         <div class="conten-team_item">
             <label class="label-form" >Frente</label>
             <button (click)="quitarHeroe(3)" class="conten-hero btn btn-dark">
-                <img [src]="equipService.frente.urlImgHead" class="img-hero" alt="">
-                <p> {{equipService.frente.name}}</p>
+                <img [src]="equipService.equipo.Entidad3?.urlImgHead" class="img-hero" alt="">
+                <p> {{equipService.equipo.Entidad3?.name}}</p>
             </button>
         </div>
     </div>

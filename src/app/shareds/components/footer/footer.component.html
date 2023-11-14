@@ -1,0 +1,36 @@
+
+
+<footer >
+    <div class="container">
+        <div class="row">
+            <div class="redes-sociales col-6">
+                <h3>Siguenos</h3>
+                <div class="redes-sociales_posicion">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </div>
+            </div>
+            <div class="navegacion-sitio col-6">
+                <h3>Nuestro sitio</h3>
+                <div>
+                    <ng-container *ngIf="authService.isAuthenticated(); else userNav">
+                        <app-nav-bar></app-nav-bar>
+                    </ng-container>
+                    
+                    <ng-template #userNav>
+                        <app-nav-bar-user></app-nav-bar-user>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="text-center pt-3 conten-patrosinio">
+                © COPYRIGHT ©2018 RED HOOK STUDIOS. ALL RIGHTS RESERVED.
+                <a class="text-white" href="https://www.darkestdungeon.com/">www.darkestdungeon.com/</a>
+            </p>
+        </div>
+    </div>
+</footer>
+

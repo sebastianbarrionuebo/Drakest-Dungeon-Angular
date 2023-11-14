@@ -1,31 +1,25 @@
 
 .conten{
-    background-image: url('../../../../../assets/Background-user.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    width: auto;
-    border: solid 0.2em rgb(41, 41, 41);
+    text-align: center;
 }
 
 .card{
-    text-align: center;
-    padding: 10em 10em;
-    color: white;
+    padding: 20em 30em;
     background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+}
+
+.card-title{
+    font-size: 2.2em;
 }
 
 .card-body {
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .item{
-    padding: 2em 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    padding: 1em 0;
 }
-.item-padding{
-    padding: 0 2em;
+.btn{
+    padding: 0.5em 2em;
 }

@@ -4,14 +4,15 @@
     padding: 12% 25% 20% 55%;
     text-align: center;
     background-image: url('../../../../../assets/background-main.jpg');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-size: cover; 
     background-repeat: no-repeat;;
-    height: 100vh; /* 100% de la altura de la ventana */
+    height: 100vh; 
     width: 100vw; 
 }
 
 .card{
     padding-top: 1em;
+    padding-bottom: 1em;
     background-color: rgba(37, 34, 34, 0.5);
     color: white;
 }

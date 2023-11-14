@@ -1,0 +1,19 @@
+
+
+
+<div class="row ">
+    <div class="col-3 size">
+        <img [src]="equipoHeroe.equipo?.Entidad1?.urlImgHead" alt="">
+        <p >{{equipoHeroe.equipo?.Entidad1?.name}}</p>
+    </div>
+    <div class="col-3 size">
+        <img [src]="equipoHeroe.equipo?.Entidad2?.urlImgHead" alt="">
+        <p>{{equipoHeroe.equipo?.Entidad2?.name}}</p>
+    </div>
+    <div class="col-3 size">
+        <img [src]="equipoHeroe.equipo?.Entidad3?.urlImgHead" alt="">
+        <p>{{equipoHeroe.equipo?.Entidad3?.name}}</p>
+    </div>
+    <button (click)="editarEquipo()" class="btn btn-secondary col-1" ><img class="btn-img" src="./assets/Select_Radiant.png" alt=""></button>
+    <button (click)="borrarEquipo()" class="btn btn-secondary col-1" ><img class="btn-img" src="./assets/Select_MoonBlood.png" alt=""></button>
+</div>

@@ -15,7 +15,7 @@ export class InfoDugenonComponent {
 
 
   irAEquipo(team:Nivel) {
-    this.router.navigate([`/main/equipo/:monstruo/${team.monstruos?.idEntidad1}/${team.monstruos?.idEntidad2}/${team.monstruos?.idEntidad3}`]);
+    this.router.navigate([`/main/dungeons/nivel/:monstruo/${team.idEntidad1}/${team.idEntidad2}/${team.idEntidad3}`]);
   }
 
 

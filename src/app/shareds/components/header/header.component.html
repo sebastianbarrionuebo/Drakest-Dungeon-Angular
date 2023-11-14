@@ -1,0 +1,17 @@
+
+
+
+<header class="conten">
+    <div class="titulo">
+        <h1 class="size-title"><a routerLink="/landing" class="link">Darkest Dungeon</a></h1>
+    </div>
+    <div class="navBar">
+        <ng-container *ngIf="authService.isAuthenticated(); else userNav">
+            <app-nav-bar></app-nav-bar>
+        </ng-container>
+          
+        <ng-template #userNav>
+            <app-nav-bar-user></app-nav-bar-user>
+        </ng-template>
+    </div>
+</header>

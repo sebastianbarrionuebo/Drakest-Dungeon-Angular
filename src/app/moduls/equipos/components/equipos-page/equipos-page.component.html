@@ -1,0 +1,30 @@
+
+
+
+<app-header></app-header>
+<main class="conten">
+    <div class="conten-lista">
+        <h2 class="title">Lista de equipos</h2>
+        <div class="container pt-5 pb-5">
+            <div class="row body">
+                <p class="col-3">Retaguardia</p>
+                <p class="col-3">Centro</p>
+                <p class="col-3">Frente</p>
+                <div class="col-3 row">
+                    <p class="col-6">Editar</p>
+                    <p class="col-6">Borrar</p>
+                </div>
+            </div>
+
+            <div *ngFor="let item of equipoService.listEquiposHeroes" >
+                <app-equipo-composicion [equipoHeroe]="item" class="col-9 p-2"></app-equipo-composicion>
+                <hr>
+            </div>
+        </div>
+
+        <div class="pt-5">
+            <button (click)="irAMain()" class="btn btn-dark">Salir</button>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>

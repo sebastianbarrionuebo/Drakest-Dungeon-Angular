@@ -1,0 +1,28 @@
+
+
+.conten{
+    padding: 10em 10em;
+    text-align: center;
+    background-image: url('../../../assets/Background-error404.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;;
+    background-position: center;
+    height: 100vh;
+    width: 100vw; 
+}
+
+.container{
+    color: white;
+}
+
+.col-4{
+    padding: 2em 2em;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.title{
+    font-size: 1.7em;
+}
+.text{
+    font-size: 1.5em;
+}
