@@ -11,24 +11,24 @@ import { AuthService } from 'src/app/core/services/auth/auth.service';
 })
 export class EditCampoComponent implements OnInit{
   public editForm:FormGroup;
-  private campo:String = '';
+  //private campo:String = '';
 
   constructor(@Inject(MAT_DIALOG_DATA) private data:String,
     private dialogRef:MatDialogRef<EditCampoComponent>,
     public authService:AuthService,
     private fb:FormBuilder) 
     {
-    this.campo = this.data;
+    //this.campo = this.data;
     this.editForm = this.fb.group({
       id: [''],
-      userName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.pattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')]],
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
   }
 
   public editUser() {
-    this.authService.editUser(this.editForm.get('userName')?.value,this.editForm.get('email')?.value,this.editForm.get('password')?.value).subscribe({
+    this.authService.editUser(this.editForm.get('name')?.value,this.editForm.get('email')?.value,this.editForm.get('password')?.value).subscribe({
       next: (resolve) => {
         console.log("Se modifico con exito!");
         this.dialogRef.close(true);
@@ -38,8 +38,8 @@ export class EditCampoComponent implements OnInit{
   }
   
   
-  get userName(){
-    return this.editForm.get("userName") as FormControl;
+  get name(){
+    return this.editForm.get("name") as FormControl;
   }
 
   get email(){

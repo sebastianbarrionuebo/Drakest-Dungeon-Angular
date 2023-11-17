@@ -16,7 +16,7 @@ export class UserInfoComponent{
 
   openEdit(campo:String) {
     const dialogRef = this.matDialog.open(EditCampoComponent,{
-      data: campo
+      //data: campo
     })
 
     dialogRef.afterClosed().subscribe({

@@ -2,12 +2,12 @@
 
 <div class="card dialog">
     <h2 class="card-title mt-4">Edita el siguiente campo</h2>
-    <form [formGroup]="editForm" (ngSubmit)="editUser()" class="card-body">
+    <form [formGroup]="editForm" class="card-body">
         <div class="mt-3">
             <label class="form-label" >Nombre</label>
-            <input formControlName="userName" type="text"  class="form-control"  placeholder="Ingrese nuevo nombre de usuario">
+            <input formControlName="name" type="text"  class="form-control"  placeholder="Ingrese nuevo nombre de usuario">
             
-            <div class="alert alert-danger" [hidden]="userName.valid || userName.pristine">
+            <div class="alert alert-danger" [hidden]="name.valid || name.pristine">
                 <span>El nombre es obligatorio</span>
             </div>
         </div>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="mt-4">
-            <button class="btn btn-primary m-2" [disabled]="!userName.valid || !email.valid || !password.valid">Guardar</button>
+            <button (click)="editUser()" class="btn btn-primary m-2" [disabled]="!name.valid || !email.valid || !password.valid">Guardar</button>
             <button (click)="closeDialog()" class="btn btn-danger m-2"  >Cancel</button>
         </div>
     </form>

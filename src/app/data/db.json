@@ -20,7 +20,7 @@
     },
     {
       "id": 1,
-      "userName": "Seba",
+      "name": "Seba",
       "email": "seb.barrionuebo@gmail.com",
       "password": "1234"
     },
@@ -3563,6 +3563,24 @@
         "idEntidad3": 8
       },
       "id": 25
+    },
+    {
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 3,
+        "idEntidad2": 2,
+        "idEntidad3": 4
+      },
+      "id": 26
+    },
+    {
+      "idUser": 1,
+      "equipo": {
+        "idEntidad1": 9,
+        "idEntidad2": 11,
+        "idEntidad3": 0
+      },
+      "id": 27
     }
   ]
 }
