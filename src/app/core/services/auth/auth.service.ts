@@ -24,11 +24,10 @@ export class AuthService{
     return this.http.post(`${this.baseUrl}/users`, user);
   }
 
-  public editUser(name:String, email:String, password:String ):Observable<Boolean> {
-    this.user.name = name;
+  public editUser(email:String, password:String ):Observable<Boolean> {
     this.user.email = email;
     this.user.password = password;
-    const newUser = {id: this.user.id, name, email, password};
+    const newUser = {id: this.user.id, userName: this.user.userName, email, password};
     return this.http.put<boolean>(`${this.baseUrl}/users/${this.user.id}`, newUser);
   }
 
@@ -49,7 +48,7 @@ export class AuthService{
   }
   
   public getToAuth(userName:String, password:String) {
-    this.http.get<User[]>(`${this.baseUrl}/users?name=${userName}&password=${password}`).subscribe({
+    this.http.get<User[]>(`${this.baseUrl}/users?userName=${userName}&password=${password}`).subscribe({
       next: (result) => {
         if(result.length == 1) {
           this.user = result[0];
@@ -67,6 +66,10 @@ export class AuthService{
       },
       error: (error) => {console.log(error)}
     });
+  }
+
+  public existUser(userName:String) {
+    return this.http.get<User[]>(`${this.baseUrl}/users?userName=${userName}`);
   }
 
   public logout() {

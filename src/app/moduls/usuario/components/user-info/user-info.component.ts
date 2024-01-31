@@ -14,11 +14,8 @@ export class UserInfoComponent{
   constructor(public authService:AuthService, private router:Router, private matDialog:MatDialog) {
   }
 
-  openEdit(campo:String) {
-    const dialogRef = this.matDialog.open(EditCampoComponent,{
-      //data: campo
-    })
-
+  openEdit() {
+    const dialogRef = this.matDialog.open(EditCampoComponent,{})
     dialogRef.afterClosed().subscribe({
       next: (result) => {
         console.log('El cuadro de diálogo se ha cerro:', result);

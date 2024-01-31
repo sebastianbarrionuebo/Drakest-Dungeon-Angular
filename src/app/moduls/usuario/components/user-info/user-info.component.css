@@ -4,9 +4,14 @@
 }
 
 .card{
-    padding: 20em 30em;
-    background-color: rgba(0, 0, 0, 0.747);
+    padding: 14em 30em;
     color: white;
+    background-image: url('../../../../../assets/Background-user3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: auto;
 }
 
 .card-title{

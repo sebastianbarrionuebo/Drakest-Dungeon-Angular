@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { SharedsModule } from 'src/app/shareds/shareds.module';
 import { DialogRegisterComponent } from './components/dialog-register/dialog-register.component';
 import { DialogLoginComponent } from './components/dialog-login/dialog-login.component';
+import { DialogUserExistComponent } from './components/dialog-user-exist/dialog-user-exist.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DialogLoginComponent } from './components/dialog-login/dialog-login.com
     LoginComponent,
     RegisterComponent,
     DialogRegisterComponent,
-    DialogLoginComponent
+    DialogLoginComponent,
+    DialogUserExistComponent
   ],
   imports: [
     CommonModule,

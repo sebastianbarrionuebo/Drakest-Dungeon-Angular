@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/services/auth/auth.service';
 import { DialogRegisterComponent } from '../dialog-register/dialog-register.component';
+import { DialogUserExistComponent } from '../dialog-user-exist/dialog-user-exist.component';
 
 
 @Component({
@@ -26,18 +27,32 @@ export class RegisterComponent {
   }
 
   procesarInfo(){
-    this.authService.setUser(this.formUser.get('userName')?.value,this.formUser.get('email')?.value,this.formUser.get('password')?.value).subscribe({
+    this.authService.existUser(this.formUser.get('userName')?.value).subscribe({
       next: (result) => {
-        const dialogRef = this.matDialog.open(DialogRegisterComponent,{})
-        dialogRef.afterClosed().subscribe({
-          next: (result: any) => {
-            console.log('El cuadro de diálogo se ha cerro:', result);
-            this.router.navigate(["/landing"])
-          }
-        })
-      }
+        if(result.length == 1) {
+          console.log("Existe");
+          const dialogRef = this.matDialog.open(DialogUserExistComponent,{})
+          dialogRef.afterClosed().subscribe({
+            next: (result: any) => {
+              console.log('El cuadro de diálogo se ha cerro:', result);
+            }
+          })
+        }else{
+          this.authService.setUser(this.formUser.get('userName')?.value,this.formUser.get('email')?.value,this.formUser.get('password')?.value).subscribe({
+            next: (result) => {
+              const dialogRef = this.matDialog.open(DialogRegisterComponent,{})
+              dialogRef.afterClosed().subscribe({
+                next: (result: any) => {
+                  console.log('El cuadro de diálogo se ha cerro:', result);
+                  this.router.navigate(["/landing"])
+                }
+              })
+            } 
+          })
+        }
+      },
+      error: (error) => {console.log(error)}
     })
-    console.log(this.formUser.value)
   }
 
   get userName(){

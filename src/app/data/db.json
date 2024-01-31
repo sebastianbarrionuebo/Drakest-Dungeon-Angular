@@ -20,7 +20,7 @@
     },
     {
       "id": 1,
-      "name": "Seba",
+      "userName": "Seba",
       "email": "seb.barrionuebo@gmail.com",
       "password": "1234"
     },
@@ -29,12 +29,6 @@
       "email": "elmanianaesmasbonito@gmail.com",
       "password": "1234",
       "id": 5
-    },
-    {
-      "id": 6,
-      "userName": "",
-      "email": "dsadsa",
-      "password": ""
     },
     {
       "id": 7,
@@ -47,6 +41,18 @@
       "email": "asdasdas@gmail.com",
       "password": "1234",
       "id": 8
+    },
+    {
+      "userName": "Chinga",
+      "email": "asdasdaaaasd@gmail.com",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "userName": "Chinga2",
+      "email": "asdasda@gmail.com",
+      "password": "1234",
+      "id": 10
     }
   ],
   "heroes": [
@@ -3390,7 +3396,7 @@
       "equipo": {
         "idEntidad1": 12,
         "idEntidad2": 8,
-        "idEntidad3": 0
+        "idEntidad3": 4
       }
     },
     {
@@ -3572,15 +3578,6 @@
         "idEntidad3": 4
       },
       "id": 26
-    },
-    {
-      "idUser": 1,
-      "equipo": {
-        "idEntidad1": 9,
-        "idEntidad2": 11,
-        "idEntidad3": 0
-      },
-      "id": 27
     }
   ]
 }
